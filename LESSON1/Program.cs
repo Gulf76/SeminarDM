@@ -440,4 +440,100 @@ N.
 //     array[i] = x;
 // }
 // Console.WriteLine($"[{string.Join(", ", array)}]");
+   
+
+   //               LESSON  4
+
+/*ЗАДАЧА ИЗ ДОМАШНЕЙ РАБОТЫ*/
+
+// Console.Clear();
+// Console.Write("Введите кол-во кустов: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] arrayFirst = new int[n];
+// int resultSumma = 0;
+
+// for (int i = 0; i < arrayFirst.Length; i++)
+//     arrayFirst[i] = Convert.ToInt32(Console.ReadLine());
+
+// for (int i = 1; i < arrayFirst.Length - 1; i++)
+// {
+//     if (arrayFirst[i - 1] + arrayFirst[i] + arrayFirst[i + 1] > resultSumma)
+//         resultSumma = arrayFirst[i - 1] + arrayFirst[i] + arrayFirst[i + 1];
+// }
+// if (arrayFirst[0] + arrayFirst[1] + arrayFirst[n - 1] > resultSumma)
+//     resultSumma = arrayFirst[0] + arrayFirst[1] + arrayFirst[n - 1];
+    
+// if (arrayFirst[0] + arrayFirst[n - 1] + arrayFirst[n - 2] > resultSumma)
+//     resultSumma = arrayFirst[0] + arrayFirst[n - 1] + arrayFirst[n - 2];
+
+// Console.WriteLine(resultSumma);
+
+
+
+
+
+/*       
+      ЗАДАЧА 24     
+Задача 24: Напишите программу, которая принимает на вход число (А) и выдаёт сумму чисел от 1 до А.
+7 -> 28
+4 -> 10
+8 -> 36
+*/
+// Console.Clear();
+// Console.Write("Введите число: ");
+// double n = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine($"Результат: {(n + 1) / 2 * n}");
+
+
+/*      
+       ЗАДАЧА 26
+Задача 26: Напишите программу, которая принимает на вход число и выдаёт количество цифр в числе.
+456 -> 3
+78 -> 2
+89126 -> 5
+*/
+
+// Console.Write("Введите число: ");
+//  int n = Convert.ToInt32(Console.ReadLine());
+     
+//     void Array (int [] array) ;
+//      for ( int i = 0;i < array.Length; i++)
+//      int k = 0 ;
+//      int l = k+array.Length ;
+//           Console.Write(l);  // НЕ ЗНАЮ ОТ КУДА ЭТО ВЗЯЛ
+
+
+//  Console.Clear();
+//  Console.Write("Введите число: ");
+//  int n = Convert.ToInt32(Console.ReadLine());
+//  int i  = 1;
+//      while ( n /10 != 0)
+//             {n /=10;
+//                 i++;}
+//     Console.Write(i);
+
+//                                  ЗАДАЧА 28      
+// Задача 28: Напишите программу, которая принимает на вход число N и выдаёт произведение чисел от 1 до N.
+// 4 -> 24 
+// 5 -> 120
+  
+
+//   Console.Clear();
+// Console.Write("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine()), result = 1;
+// for (int i = 1; i <= n; i++)
+//     result *= i; // result = result * i
+// Console.WriteLine($"Результат: {result}");   
+
+//                               ЗАДАЧА 30
+
+// Задача 30: Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном 
+// порядке.
+// [1,0,1,1,0,1,0,0]
+
+// Console.Clear();
+// int[] array = new int[8];
+// for (int i = 0; i < 8; i++)
+//     array[i] = new Random().Next(0, 2);
+// Console.WriteLine($"Результат: [{string.Join(", ", array)}]");
 
