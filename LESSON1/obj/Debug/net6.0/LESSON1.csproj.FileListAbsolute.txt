@@ -1,0 +1,15 @@
+C:\Users\akim\Desktop\SEMINARDM\LESSON1\bin\Debug\net6.0\LESSON1.exe
+C:\Users\akim\Desktop\SEMINARDM\LESSON1\bin\Debug\net6.0\LESSON1.deps.json
+C:\Users\akim\Desktop\SEMINARDM\LESSON1\bin\Debug\net6.0\LESSON1.runtimeconfig.json
+C:\Users\akim\Desktop\SEMINARDM\LESSON1\bin\Debug\net6.0\LESSON1.dll
+C:\Users\akim\Desktop\SEMINARDM\LESSON1\bin\Debug\net6.0\LESSON1.pdb
+C:\Users\akim\Desktop\SEMINARDM\LESSON1\obj\Debug\net6.0\LESSON1.csproj.AssemblyReference.cache
+C:\Users\akim\Desktop\SEMINARDM\LESSON1\obj\Debug\net6.0\LESSON1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akim\Desktop\SEMINARDM\LESSON1\obj\Debug\net6.0\LESSON1.AssemblyInfoInputs.cache
+C:\Users\akim\Desktop\SEMINARDM\LESSON1\obj\Debug\net6.0\LESSON1.AssemblyInfo.cs
+C:\Users\akim\Desktop\SEMINARDM\LESSON1\obj\Debug\net6.0\LESSON1.csproj.CoreCompileInputs.cache
+C:\Users\akim\Desktop\SEMINARDM\LESSON1\obj\Debug\net6.0\LESSON1.dll
+C:\Users\akim\Desktop\SEMINARDM\LESSON1\obj\Debug\net6.0\refint\LESSON1.dll
+C:\Users\akim\Desktop\SEMINARDM\LESSON1\obj\Debug\net6.0\LESSON1.pdb
+C:\Users\akim\Desktop\SEMINARDM\LESSON1\obj\Debug\net6.0\LESSON1.genruntimeconfig.cache
+C:\Users\akim\Desktop\SEMINARDM\LESSON1\obj\Debug\net6.0\ref\LESSON1.dll
