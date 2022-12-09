@@ -537,3 +537,828 @@ N.
 //     array[i] = new Random().Next(0, 2);
 // Console.WriteLine($"Результат: [{string.Join(", ", array)}]");
 
+      //    ДОМАШНЯЯ РАБОТА LESSON 4
+
+//От Денис Макарцев всем 10:22 AM
+// task dop
+
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массивва: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// int[] arrayHelp = new int[n];
+// for (int i = 0; i < array.Length; i++)
+//     array[i] = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine($"[{string.Join(", ", array)}]");
+// int k = Convert.ToInt32(Console.ReadLine());
+// k = k % n;
+// if (k > 0)
+// {
+//     for (int i = 0; i < k; i++)
+//         arrayHelp[i] = array[array.Length - k + i];
+//     for (int i = 0; i < array.Length - k; i++)
+//         arrayHelp[k + i] = array[i];
+    
+//     Console.WriteLine($"[{string.Join(", ", arrayHelp)}]");
+// }
+// else
+// {
+//     k = (-1) * k;
+//     for (int i = 0; i < k; i++)
+//         arrayHelp[array.Length - k + i] = array[i];
+//     for (int i = 0; i < array.Length - k; i++)
+//         arrayHelp[i] = array[k + i];
+//     Console.WriteLine($"[{string.Join(", ", arrayHelp)}]");
+// }
+
+
+
+/*
+Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+НЕ ИСПОЛЬЗОВАТЬ MATH.POW
+3, 5 -> 243 (3⁵)
+2, 4 -> 16
+*/
+
+
+
+// Console.Clear();
+// Console.Write("Введите число a =  ");
+// int a = Convert.ToInt32(Console.ReadLine()) ; 
+// Console.Write("Введите число b =  ");
+// int b = Convert.ToInt32(Console.ReadLine()) ; 
+// int c = a;
+//  for( int i = 1; i < b; i++ )
+//      {
+//         c = c * a;
+//      }
+// Console.Write($"Число с = {c}");
+
+/*
+Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+452 -> 11
+82 -> 10
+9012 -> 12
+
+
+// ПЕРВЫЙ ВАРИАНТ
+
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine()), result = 0;
+// while (n > 0)
+// {
+//     int x = n % 10;
+//     result = result + x;
+//     n = n / 10;
+// }
+// Console.WriteLine(result);
+
+// ВТОРОЙ ВАРИАНТ    ЧЕРЕЗ STRING
+
+
+Console.Clear();
+Console.Write("Введите число: ");
+string? n = Console.ReadLine();
+int result = 0;
+for (int i = 0; i < n.Length; i++)
+    result = result + int.Parse(n[i].ToString());
+
+Console.WriteLine(result);
+
+ТРЕТИЙ ВАРИАНТ 
+
+*/
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int p = 0;
+// int sum = 0;
+    
+// while ( n / 10 != 0)
+// {
+//      p = n % 10;
+//      n /=10; 
+//      sum = sum + p;
+// }
+//    if ( n / 10 == 0)
+// { 
+//      p = n % 10 ;
+//      sum = sum + p;
+// }
+
+// Console.WriteLine($"{sum} ");
+
+     
+
+
+
+
+/*
+Задача 29: Напишите программу, которая задаёт массив из 8 элементов, предоставить возможность пользователю 
+ввести числа и вывести их на экран.
+
+1, 2, 5, 7, 19, 6, 1, 33 -> [1, 2, 5, 7, 19, 6, 1, 33]    
+*/   
+
+
+// Console.Write("Введите число злементов в массиве  ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int [] array = new int  [n] ;
+
+// for ( int i = 0; i < array.Length; i++)
+//      {
+//      Console.Write("Введите число  ");
+//      int x = Convert.ToInt32(Console.ReadLine());
+//      array[i] = x ;
+//    
+// Console.WriteLine($"[{string.Join(", ", array)}]"); 
+  
+
+
+// Console.Clear();
+// int [] array = new int [8];
+//  for ( int i = 0; i < 8 ; i++ )
+//    {
+//      array [i] = new Random().Next(0,35);
+//    }
+// Console.WriteLine($"[{string.Join(",", array)}]");
+ 
+
+ //СОРТИРОВКА ЧИСЕЛ
+
+//  int [] arr = {2,6,4,9,15,3,45,17};
+//    void PrintArray ( int [] array)
+// {
+//       for ( int i = 0; i < array.Length; i++ )
+//           {
+//             Console.Write($"{array[i] } " );
+//           }
+//        Console.WriteLine();   
+// }
+//     PrintArray(arr);
+
+//     void SelectionSort ( int [] array)
+// {  
+//     for ( int i = 0; i < array.Length; i++ )
+//         {
+//           int minPosition = i;
+//            for ( int j =i + 1; j < array.Length; j++ )
+//                {
+//                 if ( array[j] < array [minPosition]) minPosition = j ;
+//                }
+//                int temp = array [i];
+//                array [i] = array [minPosition];
+//                array [minPosition] = temp;
+//          }
+// }
+//    SelectionSort(arr);
+//     PrintArray(arr);
+
+
+/*
+Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, 
+которая покажет количество чётных чисел в массиве.
+
+[345, 897, 568, 234] -> 2
+*/
+// Console.Clear();
+// int sum = 0;
+// int [] array = new int [8];
+//  for ( int i = 0; i < 8 ; i++ )
+//    {
+//      array [i] = new Random().Next(99,1000);
+//       if ( array[i] % 2 == 0)
+//         sum = sum + 1 ;
+//    }
+// Console.WriteLine($"[{string.Join(",", array)}]");
+// Console.WriteLine($"СУММА ЧЕТНЫХ ЧИСЕЛ = {sum}  ");
+
+
+/*
+Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на 
+нечётных позициях.
+
+[3, 7, 23, 12] -> 19
+[-4, -6, 89, 6] -> 0
+*/
+
+// Console.Clear();
+// int sum = 0;
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int [] array = new int [8];
+//  for ( int i = 0; i < 8 ; i++ )
+//    {
+//      array [i] = new Random().Next(99,1000);
+//      if ( i % 2 == 1)
+//      {
+//             sum = sum + array[i];
+//      }
+//    }
+//    Console.WriteLine($"[{string.Join(",", array)}]");
+//    Console.WriteLine($"СУММА НЕЧЕТНЫХ ЭЛЕМЕНТОВ = {sum}  ");
+
+
+/*
+Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+
+[3 7 22 2 78] -> 76
+*/
+
+
+   // LESSON 5 0512202
+
+ /*  
+Задача 31: Задайте массив из 12 элементов, заполненный случайными числами из промежутка [-9, 9]. 
+Найдите сумму отрицательных и положительных элементов массива.
+Например, в массиве [3,9,-8,1,0,-7,2,-1,8,-3,-1,6] сумма положительных чисел равна 29, сумма 
+отрицательных равна -20.
+*/
+
+
+
+// task 31
+
+// void InputArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] = new Random().Next(-9, 10);
+// }
+
+
+// void ReleaseArray(int[] array)
+// {
+//     int sumPositive = 0, sumNegative = 0;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if (array[i] > 0)
+//             sumPositive += array[i];
+//         else
+//             sumNegative += array[i];
+//     }
+//     Console.WriteLine($"Сумма положительных чисел в массиве {sumPositive}");
+//     Console.WriteLine($"Сумма отрицательных чисел в массиве {sumNegative}");
+// }
+
+
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine($"[{string.Join(", ", array)}]");
+// ReleaseArray(array);
+   
+
+
+
+
+
+  /*
+   Задача 32: Напишите программу замена элементов массива: положительные элементы замените на соответствующие 
+   отрицательные, и наоборот.
+[-4, -8, 8, 2] -> [4, 8, -8, -2] 
+*/
+
+
+// void InputArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] = new Random().Next(-9, 10);
+// }
+
+
+// void ReleaseArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] *= (-1);
+// }
+
+
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine($"Исходный массив: [{string.Join(", ", array)}]");
+// ReleaseArray(array);
+// Console.WriteLine($"Конечный массив: [{string.Join(", ", array)}]");
+
+
+/*
+Задача 33: Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
+4; массив [6, 7, 19, 345, 3] -> нет
+-3; массив [6, 7, 19, 345, 3] -> да
+*/
+
+// void InputArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] = new Random().Next(-9, 10);
+// }
+
+
+// string ReleaseArray(int[] array, int k)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if (array[i] == k)
+//             return "yes";
+//     }
+//     return "no";
+// }
+
+
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine($"Исходный массив: [{string.Join(", ", array)}]");
+// Console.Write("Введите число, которое Вы хотите найти в массиве: ");
+// int k = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine(ReleaseArray(array, k));
+
+/*
+Задача 35: Задайте одномерный массив из 123 случайных чисел. Найдите количество элементов массива, значения 
+которых лежат в отрезке [10,99]. 
+Пример для массива из 5, а не 123 элементов. В своём решении сделайте для 123
+[5, 18, 123, 6, 2] -> 1
+[1, 2, 3, 6, 2] -> 0
+[10, 11, 12, 13, 14] -> 5
+*/
+  // task 35
+
+// void InputArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] = new Random().Next(-100, 101);
+// }
+
+
+// int ReleaseArray(int[] array)
+// {
+//     int count = 0;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if (array[i] >= 10 && array[i] <= 99)
+//             count++;
+//     }
+//     return count;
+// }
+
+
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// // int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[123];
+// InputArray(array);
+// Console.WriteLine($"Исходный массив: [{string.Join(", ", array)}]");
+// Console.WriteLine($"Результат: {ReleaseArray(array)}");
+
+// task 37
+ /*
+Задача 37: Найдите произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, 
+второй и предпоследний и т.д. Результат запишите в новом массиве.
+[1 2 3 4 5] -> 5 8 3
+[6 7 3 6] -> 36 21
+*/ 
+
+// void InputArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] = new Random().Next(0, 11);
+// }
+
+
+// void ReleaseArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length / 2 + array.Length % 2; i++)
+//         Console.Write($"{array[i] * array[array.Length - i - 1]} ");
+// }
+
+
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine($"Исходный массив: [{string.Join(", ", array)}]");
+//ReleaseArray(array);
+
+ 
+// ДОМАШНЯЯЯ РАБОТА УРОК 5
+/*
+Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, 
+которая покажет количество чётных чисел в массиве.
+
+[345, 897, 568, 234] -> 2
+*/
+
+// void InputArray (int[] array )
+// {
+//      for ( int i = 0; i < array.Length; i++)
+//      array[i] = new Random().Next(100, 1000); 
+// }
+ 
+//  int EvenNumbers (int[] array )
+//  {
+//       int count = 0 ;
+//       for ( int i = 0; i < array.Length; i++)
+//       {
+//           if (array[i] % 2 == 0)
+//           count++;
+//       }
+//       return count;
+//  }
+
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine($"Исходный массив: [{string.Join(", ", array)}]");
+// Console.WriteLine($"Kоличество чётных чисел: [{EvenNumbers(array)}]");
+
+/*
+Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих 
+на нечётных позициях.
+
+[3, 7, 23, 12] -> 19
+[-4, -6, 89, 6] -> 0
+*/
+//   
+//
+// ВАРИАНТ 1
+//
+//
+// void InputArray (int[] array )
+// {
+//      for ( int i = 0; i < array.Length; i++)
+//      array[i] = new Random().Next(100, 1000); 
+// }
+ 
+//  void OddSum (int[] array )
+//  {
+//       int sum = 0 ;
+//       for ( int i = 0; i < array.Length; i++)
+//       {
+//           if (i % 2 == 1)
+//           sum += array[i] ;
+//       }
+//       Console.WriteLine($"Сумма элементов, на нечётных позициях: [{sum}]");
+ //  }
+ //      ВАРИАНТ 2
+//
+//
+//      int sum = 0 ;
+//       for ( int i = 1; i < array.Length; i+=2)
+//       {
+//          sum += array[i] ;
+//           return sum; 
+//       } 
+//
+
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine($"Исходный массив: [{string.Join(", ", array)}]");
+// OddSum(array);
+ 
+/*
+ Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+
+[3 7 22 2 78] -> 76
+*/
+
+// void InputArray (double[] array )
+// {
+//      Random rand = new Random();
+//      for ( int i = 0; i < array.Length ; i++)
+//      array[i] = rand.Next(-5, 5) + Math.Round(rand.NextDouble(),1);
+     
+// }
+//   void MaxMin ( double[] array) 
+//   {
+//     for ( int i = 0; i < array.Length-1; i++) 
+//     { int MinPos = i;
+    
+//           for ( int j = i + 1; j < array.Length; j++)
+//                 {
+//                   if ( array [j] <  array [MinPos]) MinPos = j; 
+                  
+//                 }  
+//                       double temp = array [i] ;
+//                       array [i] = array [MinPos] ;
+//                       array [MinPos] =  temp;
+//                  }
+//               }
+// 
+//              ДРУГОЙ ВАРИАНТ
+
+//     double MaxArray ( double[] array) 
+//   {
+//      double maxArray = array [0];
+//     for ( int i = 0; i < array.Length-1; i++) 
+//        {
+//          if ( maxArray < array [i])
+//            maxArray  = array [i];
+//         }
+//          return maxArray;
+//    } 
+
+
+//      //     double MinArray ( double[] array) 
+//   {
+//      double minArray = array [0];
+//     for ( int i = 0; i < array.Length-1; i++) 
+//        {
+//          if ( minArray > array [i])
+//            minArray  = array [i];
+//         }
+//          return minArray;
+//    } 
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// double[] array = new double[n];
+//  InputArray(array);
+//  Console.WriteLine($"Исходный массив: [{string.Join(", ", array)}]");
+//  MaxMin(array);
+//  Console.WriteLine($"Текущий массив:  [{string.Join(", ", array)}]");
+//  Console.WriteLine($"Разность max и min: [{array[array.Length-1] - array[0]}]");
+//для другого варианта
+//  Console.WriteLine($"Разность max и min: [{MaxArray(array) - MinArray(array)}]");
+
+
+/*
+Вася не любит английский язык, но каждый раз старается получить хотя бы четверку за четверть, чтобы оставаться 
+ударником. В текущей четверти Вася заметил следующую закономерность: по нечетным дням месяца он получал тройки, а 
+по четным – четверки. Так же он помнит, в какие дни он получал эти оценки. Поэтому он выписал на бумажке все эти дни 
+для того, чтобы оценить, сколько у него троек и сколько четверок. Помогите Васе это сделать, расположив четные и 
+нечетные числа в разных строчках. Вася может рассчитывать на оценку 4, если четверок не меньше, чем троек.
+Входные данные
+В первой строке входного файла INPUT.TXT записано единственное число N – количество элементов целочисленного 
+массива (1 ≤ N ≤ 100). Вторая строка содержит N чисел, представляющих заданный массив. Каждый элемент массива – 
+натуральное число от 1 до 31. Все элементы массива разделены пробелом.
+
+Выходные данные
+В первую строку выходного файла OUTPUT.TXT нужно вывести числа, которые соответствуют дням месяцев, в которые 
+Вася получил тройки, а во второй строке соответственно расположить числа месяца, в которые Вася получил четверки. 
+В третьей строке нужно вывести «YES», если Вася может рассчитывать на четверку и «NO» в противном случае. 
+В каждой строчке числа следует выводить в том же порядке, в котором они идут во входных данных. При выводе числа 
+отделяются пробелом
+*/
+
+
+
+
+// void InputArray (int[] array )
+// {
+//      for ( int i = 0; i < array.Length; i++)
+//      array[i] = new Random().Next(1,32); 
+// }
+// int count4 = 0; 
+// int CountEven (int[] array)
+// {   
+ 
+//    for ( int i = 0; i < array.Length; i++)
+//       {
+//              if ( array[i] % 2 == 0 )
+//           {
+//            Console.Write($" {string.Join(", ", array [i]  )} ");
+//            count4 ++;
+//           }
+//       }
+//    return count4;
+//   }
+
+// int count3 = 0;
+// int CountOdd (int[] array)
+
+// {
+//   for ( int i = 0; i < array.Length; i++)
+//       {
+//              if ( array[i] % 2 == 1 )
+//          {
+//           Console.Write($" {string.Join(", ",   array [i]  )} ");
+//           count3 ++;
+//          }
+//       }
+//       return count3;
+// }
+// void FinalResult (int[] array )
+//    {
+//    if (count4 > count3)
+//       Console.Write("Вася может рассчитывать на оценку 4");
+//    else
+//        Console.Write("Вася может рассчитывать на оценку 3");
+//     }
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine($"Исходный массив: [{string.Join(", ", array )}]");
+// CountEven (array);
+// Console.WriteLine();
+// CountOdd (array);
+// Console.WriteLine();
+// FinalResult (array);
+
+
+
+//  УРОК 6 08122022
+ 
+ 
+//   ПРОВЕРКА ДОМАШНЕГО  ЗАДАНИЯ
+
+//   КАК ВВОДИТЬ ДРОБНЫЕ ЧИСЛА
+
+// Console.Clear();
+// int i = 0;
+// while ( i <= 10)
+//  ВАРИАНТ 1
+// {
+//  double val = new Random().NextDouble() * (10 - 1) + 1;
+//  Console.WriteLine(Math.Round(val,2));
+//  i++;
+//  }
+// ВАРИАНТ 2
+//      Random rand = new Random();
+//      array[i] = rand.Next(-5, 5) + Math.Round(rand.NextDouble(),1);
+
+//array[i] = Math.Round( new Random ().NextDouble() * (20 -10) + 10,2);
+
+//    ДЛЯ ТОГО, ЧТОБЫ НЕ ПОВТОРЯЛИСЬ ЧИСЛА ПРИ ИСПОЛЬЗОВАНИИ RANDOM
+// 
+//  void InputArray ( int []array)
+//{
+//   for ( int i = 0; i < array.Length; i++)
+//    {
+//      int x =  new Random ().Next(100,1000);
+//       while ( array.Contains(x))
+//       x = new Random ().Next(100,1000);
+//        array[i] = x;
+//    }
+//  }
+
+
+//     LESSON 6
+
+
+/*
+Задача 39: Напишите программу, которая
+перевернёт одномерный массив (последний элемент
+будет на первом месте, а первый - на последнем и
+т.д.)
+[1 2 3 4 5] -> [5 4 3 2 1]
+[6 7 3 6] -> [6 3 7 6]
+*/                   
+//
+//      void InputArray (int[] array)
+//            {
+//                  for ( int i = 0; i < array.Length; i++)
+//                         array [i] = new Random ().Next(1,11);
+//             }
+                 
+//                  int[] ReleaseArray ( int [] array)
+//                  {  
+//                    for ( int i = 0; i < array.Length / 2; i++)  
+//                      {
+//                       int temp = array [i] ;
+//                       array [i] = array [array.Length - i - 1] ;
+//                       array [array.Length - i - 1] =  temp;
+//                      }
+//                     return array;
+//                  }
+                
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine($"Исходный массив: [{string.Join(", ", array )}]");
+// Console.WriteLine($"Исходный массив: [{string.Join(", ", ReleaseArray (array) )}]");
+
+
+
+/*
+Задача 40: Напишите программу, которая принимает на
+вход три числа и проверяет, может ли существовать
+треугольник с сторонами такой длины.
+Теорема о неравенстве треугольника: каждая сторона треугольника
+меньше суммы двух других сторон.
+*/
+  
+// Console.Clear();
+// Console.Write("Введите число a =: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число b =: ");
+// int b = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число c =: ");
+// int c = Convert.ToInt32(Console.ReadLine());
+//  if ( a+b>c && b+c>a && a+c>b)
+// Console.Write("может  существовать треугольник с сторонами такой длины. ");
+// else
+// {Console.Write(" Не может  существовать треугольник с сторонами такой длины. ");}
+
+
+/*
+Задача 42: Напишите программу, которая будет
+преобразовывать десятичное число в двоичное.
+45 -> 101101
+3 -> 11
+2 -> 10
+*/
+
+
+
+// Console.Clear();
+// Console.Write("Введите число a =: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// string result = String.Empty;
+// while ( n > 0 )
+// {
+//   result = Convert.ToString( n % 2 ) + result;
+//   n/=2;
+// }
+// Console.WriteLine(result);
+
+
+
+/*
+Задача 44: Не используя рекурсию, выведите первые
+N чисел Фибоначчи. Первые два числа Фибоначчи: 0 и
+1
+Если N = 5 -> 0 1 1 2 3
+Если N = 3 -> 0 1 1
+Если N = 7 -> 0 1 1 2 3 5 8
+*/
+
+// Console.Clear(); 
+// Console.Write("Введите число: "); 
+// int n = Convert.ToInt32(Console.ReadLine()); 
+// int x, a0 = 0, a1 = 1; 
+// for (int i = 0; i < n; i++) 
+// {     Console.Write($"{a0} ");     
+// x = a0 + a1;     
+// a0 = a1;     
+// a1 = x; 
+// }
+
+
+/*
+Задача 45: Напишите программу, которая будет
+создавать копию заданного массива с помощью
+поэлементного копирования.
+*/
+
+// КАК ПРАВИЛЬНО КОПИРОВАТЬ МАССИВЫ
+
+//  Clear(); 
+// int[] a = {1, 2, 3, 4, 5}; 
+// int[] b = new int[a.Length]; 
+// for (int i = 0; i < a.Length; i++)     
+// b[i] = a[i]; 
+// b[0] = 5; 
+// Console.WriteLine(string.Join(", ", a)); 
+// Console.WriteLine(string.Join(", ", b));
+
+// public class Sum{
+//   private static void Main(){
+//     int n = Convert.ToInt32(Console.ReadLine());
+//         int countDel = 0, i, j, k, m;
+//         for (i = 2; i <= n / 2; i++)
+//         {
+//             countDel = 0;
+//             for (j = 2; j <= i / 2; j++)
+//             {
+//                 if (i % j == 0)
+//                     countDel++;
+//             }
+//             if (countDel == 0)
+//             {
+//                 countDel = 0;
+//                 m = n - i;
+//                 for (k = 2; k <= (m + 1) / 2; k++)
+//                 {
+//                     if (m % k == 0)
+//                         countDel++;
+//                 }
+//                 if (countDel == 0)
+//                 {
+//                     Console.WriteLine($"{i} {m}");
+//                     return;
+//                 }
+//             }
+//         }
+//   }
+// }
+
+
+
